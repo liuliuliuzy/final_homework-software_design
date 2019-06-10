@@ -120,6 +120,8 @@ export default {
         //file: [{ validator: checkAvatar, trigger: 'blur'}],
       },
       imageUrl:"",
+      imgw:0,
+      imgh:0,
     }
   }, 
   methods: {
@@ -130,9 +132,16 @@ export default {
       beforeAvatarUpload(file) {
         console.log(file)
         this.ruleForm2.file = file
+        // var img = new Image()
         //this.ruleForm2.file = file.name;
         //this.ruleForm2.file = new blob(file.raw, 'jpg');
         this.imageUrl = URL.createObjectURL(file);
+        // img.src = this.imageUrl;
+        // img.onload = func(){
+        //   this.imgw = img.width
+        //   this.imgh = img.height
+        // }
+        // console.log('width:'+img.width+' height:'+img.height)
         alert('头像上传成功');
         return false;
         //阻止图片上传，等到所有内容填写完成之后一起上传
@@ -244,8 +253,8 @@ export default {
   border-color: #409EFF
 }
 .avatar {
-  width: 120px;
-  height: 120px;
+  /* width: 120px; */
+  height: 180px;
   display: block;
 }
 .loading-wrapper {

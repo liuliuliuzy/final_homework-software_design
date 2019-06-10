@@ -26,7 +26,7 @@ import $backend from '../backend'
 export default {
   data () {
     return {
-      imageurl:require('../pages/image/face.png'),
+      imageurl:require('../assets/face.png'),
       isLogin:false,
       isLogout:true,
       // divback: {

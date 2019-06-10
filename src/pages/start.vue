@@ -101,6 +101,9 @@ export default {
   font-size: 1.2em;
   float: right;
 }
+.el-menu-item.is-active{
+  background-color: aliceblue!important
+}
 .el-submenu{
   color: aliceblue;
   font-size: 1.2em;

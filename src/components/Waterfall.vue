@@ -5,7 +5,7 @@
 }
 .small-img:hover{
   box-shadow: 0 0 10px rgb(24, 10, 104);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .vue-waterfall-container {
   width: 100%;

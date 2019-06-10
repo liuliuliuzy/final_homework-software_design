@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import start from './pages/start'
-import view from './views/Gallery'
+import gallery from './components/Gallery'
 import intro from './components/intro'
 import login from './pages/login'
 import register from './pages/register'
@@ -23,7 +23,7 @@ export default new Router({
         },
         {
           path: '/view',
-          component: view
+          component: gallery
         }
       ]
     },
